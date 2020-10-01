@@ -1,3 +1,8 @@
 https://www.youtube.com/watch?v=IpXXYCsK2ow&feature=youtu.be&fbclid=IwAR05VKDjCpYRWzFlFF0hdB6hWN3S_W-hhV8LqO5qmkc6BqYzWhX_q3JlmYQ
 
-Also move this repository to 
+
+
+sección de preguntas de desarrollo: https://meet.jit.si/eCDQYddehdGGZ7FT5Pn3UvOK8wdGaNhD
+
+Como Instalar Odoo13 en Ubuntu Server 18.04 AWS: https://www.youtube.com/watch?v=-VEFt46Dky0&feature=youtu.be&fbclid=IwAR0vgQCIkplZkfACpHzsGVVbHQOKi_8jGrxcKlImR5T4phnyZjHM2aIigmY
+

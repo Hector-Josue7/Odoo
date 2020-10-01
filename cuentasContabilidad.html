@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+<style>
+   .sistemaOdoo{ 
+       background-color: rgb(193, 218, 230);
+   }
+
+
+   table {
+  border-collapse: collapse;
+}
+
+table, tr, td {
+  border: 2px solid black;
+  
+}
+</style>
+
+</head>
+<body>
+  <!--<h3 style ="margin:50px 500px 50px 50px">El plan es primero revisar en el sistema cuales cuentas ya están hechas, para despues trabajar en las que no están ahí</h3>-->
+    
+   
+    <table border="1" class="table table-bordered table-hover" style =" margin: 20px 0px 0px 20px; width:1400px; border-style: solid;" >
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">ID de la cuenta</th>
+            <th scope="col">Descripcion de cuenta</th>
+            <th scope="col">Tipo de cuenta</th>
+            <th scope="col">Cuentas que se encuentran en el sistema</th>
+            <th scope="col">Tipo de cuenta en el sistema</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>10000001</td>
+            <td>Caja General</td>
+            <td>Efectivo</td>
+            <td class="sistemaOdoo">
+                <b>Dar click en contabilidad ->Configuracion -> Catalogo de cuentas <br></b>
+                1) Efectivo <br>2) Capital autorizado, suscrito y pagado
+            <hr>
+            <b>Dar click en contabilidad <br></b>
+            ->Irse a Efectivo y pulsar en Nuevas transacciones <br>
+           ->Pulsar en el boton Crear
+            </td>
+            <td class="sistemaOdoo">1) Banco y efectivo<br>2) Capital
+            </td>
+          </tr>
+          <tr>
+            
+            <td>10200001</td>
+            <td>Banco Credomatic 729-866-741</td>
+            <td>Ahorro</td>
+            <td class="sistemaOdoo">
+                <b>Configuración -> Catalogo de cuentas <br></b>
+                1) Banco
+              <hr>
+              <b>Dar click en contabilidad para ingresar la cuenta por si no está ahí</b><br>
+              Observar el cuadro que dice BAC <br>
+              Si pulsa en Configurar sale una opción para agregar una cuenta bancaria <br>
+              Si el banco no lo encuentra entonces pulsar donde dice crearlo <br>
+              Ingresar los siguientes datos <br>
+              <ol>
+                <li>Nombre de diario</li>
+                <li>Numero de cuenta</li>
+                <li>Banco (Si no sale en el comboBox se puede crear un nuevo banco) con estas entradas
+                  <ol>
+                           <li>Nombre</li>
+                           <li>Dirección del banco</li>
+                           <li>Ciudad</li>
+                           <li>Estado (Si no lo encuentra, lo puede crear con lo siguientes parametros)
+                             <ol>
+                               <li>Nombre del estado</li>
+                               <li>Código del estado</li>
+                               <li>País</li>
+                             </ol>
+
+                           </li>
+                           <li>Codigo postal</li>
+                           <li>Pais</li>
+                           <li>Codigo de identificación bancaria</li>
+                           <li>Telefóno</li>
+                           <li>Correo electronico</li>
+                  </ol>
+                </li>
+
+                <li>Codigo</li>
+              </ol>
+
+              </td>
+            <td class="sistemaOdoo">1) Banco y efectivo
+          </tr>
+          <tr>
+            
+            <td>10200002</td>
+            <td>Banco Credomatic 730-348-181</td>
+            <td>Cheques</td>
+            <td class="sistemaOdoo">
+                <b>Configuración -> Catalogo de cuentas <br></b>
+                * Banco
+                <hr>
+                <b>Dar click en contabilidad para ingresar la cuenta por si no está ahí</b><br>
+                Observar el cuadro que dice BAC <br>
+                Si pulsa en Configurar sale una opción para agregar una cuenta bancaria <br>
+                Si el banco no lo encuentra entonces pulsar donde dice crearlo <br>
+                Ingresar los siguientes datos <br>
+                <ol>
+                  <li>Nombre de diario</li>
+                  <li>Numero de cuenta</li>
+                  <li>Banco (Si no sale en el comboBox se puede crear un nuevo banco) con estas entradas
+                    <ol>
+                             <li>Nombre</li>
+                             <li>Dirección del banco</li>
+                             <li>Ciudad</li>
+                             <li>Estado (Si no lo encuentra, lo puede crear con lo siguientes parametros)
+                               <ol>
+                                 <li>Nombre del estado</li>
+                                 <li>Código del estado</li>
+                                 <li>País</li>
+                               </ol>
+  
+                             </li>
+                             <li>Codigo postal</li>
+                             <li>Pais</li>
+                             <li>Codigo de identificación bancaria</li>
+                             <li>Telefóno</li>
+                             <li>Correo electronico</li>
+                    </ol>
+                  </li>
+  
+                  <li>Codigo</li>
+                </ol>
+              </td>
+            <td class="sistemaOdoo">* Banco y efectivo
+          </tr>
+          <tr>
+            <td>
+             
+            </td>
+            <td>BAC Credomatic 740-735-581</td>
+            <td>Dolares</td>
+          </tr>
+          <tr>
+            <td>10200003</td>
+            <td>Banco de Occidente</td>
+            <td>Efectivo</td>
+            <td class="sistemaOdoo">
+                <b>Configuración -> Catalogo de cuentas <br></b>
+                1) Banco
+              <hr style="font-weight: bold;">
+              </td>
+            <td class="sistemaOdoo">1) Banco y efectivo</td>
+          </tr>
+          <tr>
+            <td>10300001</td>
+            <td>Clientes</td>
+            <td>Cuentas por cobrar</td>
+            <td class="sistemaOdoo">
+                <b>Dar click en contabilidad <br></b>
+                * Irse a la pestaña de clientes y pulsar pagos <br>* Irse a la pestaña clientes y luego a ingresos</td>
+            <td class="sistemaOdoo"></td>
+          </tr>
+          <tr>
+            <td>10400001</td>
+            <td>Cuentas por cobrar SOCIOS</td>
+            <td>Cuentas por cobrar</td>
+            <td class="sistemaOdoo"> <b>Irse a Configuracion -> Catalogo de cuentas </b> <br> 
+            Hay tres cuentas que son las siguientes <br>
+            <h6>1) Cuentas por cobrar generales <br>
+                2) Cuentas por cobrar empresas afiliadas <br>
+                3) Cuentas por cobrar generales (POS) <br>
+                4) Otras cuentas por cobrar
+            </h6>
+
+         
+        </td>
+        <td class="sistemaOdoo"><br><br>
+            <h6>
+                1) Cuenta por cobrar <br>
+                2) Cuenta por cobrar <br>
+                3) Cuenta por cobrar <br>
+                4) Cuenta por cobrar
+             </h6>
+        </td>
+          </tr>
+          <tr>
+            <td>10400002</td>
+            <td>Deudores Varios EMPLEADOS</td>
+            <td>Cuentas por cobrar</td>
+            <td class="sistemaOdoo"><b>Irse a Configuracion -> Catalogo de cuentas</b><br>Hay una cuenta que es la siguiente<br><h6> 1) Prestamos al personal</h6></td>
+            <td class="sistemaOdoo"><br><br><h6>1) Cuenta por cobrar <br></h6></td>
+          </tr>
+          <tr>
+            <td>10500001</td>
+            <td>Inventario de Materia Prima</td>
+            <td>Inventario</td>
+            <td class="sistemaOdoo"><b>Pulsar en Inventario -> Datos maestros -> Productos <br>
+           </b>
+          El inventario de materia prima son todos los productos que se requieren para elaborar el pan <br>
+          Cada producto tiene las siguientes caracteristicas
+               <ul>
+                 <li>Numero_Producto (Opcional)</li>
+                 <li>Nombre producto</li>
+                 <li>Proveedor</li>
+                 <li>Presentación</li>
+                 <li>Cantidad</li>
+                 <li>Precio Unitario</li>
+                 <li>Total</li>
+                 <li>Fecha</li>
+                 <li>Valor Total por libra </li>
+                 <li>Observaciones</li>
+               </ul>
+          </td>
+            <td class="sistemaOdoo"></td>
+          </tr>
+          <tr>
+            <td>10500002</td>
+            <td>Inventario de producto en proceso</td>
+            <td>Cuentas por cobrar</td>
+          </tr>
+          <tr>
+            <td>10500003</td>
+            <td>Inventario de producto terminado</td>
+            <td>Cuentas por cobrar</td>
+          </tr>
+          <tr>
+            <td>10500004</td>
+            <td>Impuesto sobre Venta Pagado</td>
+            <td>Cuentas por cobrar</td>
+          </tr>
+          <tr>
+            <td>10600001</td>
+            <td>Mobiliario y Equipo de Oficina</td>
+            <td>Activos Fijos</td>
+          </tr>
+          <tr>
+            <td>10600002</td>
+            <td>Depreciacion de mobiliario</td>
+            <td>Activos fijos</td>
+          </tr>
+          <tr>
+            <td>10700001</td>
+            <td>Maquinaria y equipo</td>
+            <td>Activos fijos</td>
+          </tr>
+          <tr>
+            <td>10700002</td>
+            <td>Depreciacion Maquinaria y Equipo</td>
+            <td>Activos fijos</td>
+          </tr>
+          <tr>
+            <td>10800001</td>
+            <td>Equipo de Reparto</td>
+            <td>Activos fijos</td>
+          </tr>
+          <tr>
+            <td>10800002</td>
+            <td>Depreciacion Equipo Reparto</td>
+            <td>Activos fijos</td>
+          </tr>
+          <tr>
+            <td>10900001</td>
+            <td>Uniformes</td>
+            <td>Otros Activos</td>
+          </tr>
+          <tr>
+            <td>11000001</td>
+            <td>Depositos en Garantia</td>
+            <td>Otros Activos</td>
+          </tr>
+          <tr>
+            <td>20000001</td>
+            <td>Proveedores</td>
+            <td>Cuentas por Pagar</td>
+          </tr>
+          <tr>
+            <td>20100001</td>
+            <td>Cuentas por pagar</td>
+            <td>Cuentas por Pagar</td>
+          </tr>
+          <tr>
+            <td>20200001</td>
+            <td>Impuestos por Pagar</td>
+            <td>Otros Pasivos Corrientes</td>
+          </tr>
+          <tr>
+            <td>20300001</td>
+            <td>Documentos por Pagar</td>
+            <td>Cuentas por Pagar</td>
+          </tr>
+          <tr>
+            <td>30000001</td>
+            <td>Capital Social</td>
+            <td>Cierre</td>
+          </tr>
+          <tr>
+            <td>30100001</td>
+            <td>Reserva Legal</td>
+            <td>Cierre</td>
+          </tr>
+          <tr>
+            <td>30200001</td>
+            <td>Utilidades Retenidas</td>
+            <td>Utilidades Retenidas</td>
+          </tr>
+          <tr>
+            <td>30300001</td>
+            <td>Utilidad del periodo</td>
+            <td>Cierre</td>
+          </tr>
+          <tr>
+            <td>40000001</td>
+            <td>Quequitos de Vainilla</td>
+            <td>Ingresos</td>
+          </tr>
+          <tr>
+            <td>40000002</td>
+            <td>Semitas Cordon</td>
+            <td>Ingresos</td>
+          </tr>
+          <tr>
+            <td>40000003</td>
+            <td>Galleta</td>
+            <td>Ingresos</td>
+          </tr>
+          <tr>
+            <td>40000004</td>
+            <td>Pan Blanco</td>
+            <td>Ingresos</td>
+          </tr>
+          <tr>
+            <td>40000005</td>
+            <td>Semita Larga</td>
+            <td>Ingresos</td>
+          </tr>
+          <tr>
+            <td>40000099</td>
+            <td>Otros Ingresos</td>
+            <td>Ingresos</td>
+          </tr>
+          <tr>
+            <td>50000001</td>
+            <td>Costo de Ventas</td>
+            <td>Costo de Ventas</td>
+          </tr>
+          <tr>
+            <td>60100001</td>
+            <td>Mano de Obra</td>
+            <td>Egresos</td>
+          </tr>
+          <tr>
+            <td>60200001</td>
+            <td>Alquiler de Local (60%)</td>
+            <td>Egresos</td>
+          </tr>
+          <tr>
+            <td>60300001</td>
+            <td>Energia Electrica (60%)</td>
+            <td>Egresos</td>
+          </tr>
+          <tr>
+            <td>60400001</td>
+            <td>Cubiletes</td>
+            <td>Egresos</td>
+          </tr>
+          <tr>
+            <td>60500001</td>
+            <td>Material de Empaque</td>
+            <td>Egresos</td>
+          </tr>
+          <tr>
+            <td>60600001</td>
+            <td>Gas para Hornos</td>
+            <td>Egresos</td>
+          </tr>
+          <tr>
+            <td>60700001</td>
+            <td>Redecillas y Guantes</td>
+            <td>Egresos</td>
+          </tr>
+          <tr>
+            <td>60800001</td>
+            <td>Mantenimiento y maquinaria</td>
+            <td>Egresos</td>
+          </tr>
+          <tr>
+            <td>60900001</td>
+            <td>Suministro de Hielo</td>
+            <td>Egresos</td>
+          </tr>
+          <tr>
+            <td>61000001</td>
+            <td>MATERIAL DE ASEO</td>
+            <td>Egresos</td>
+          </tr>
+          <tr>
+            <td>61100001</td>
+            <td>Combustible y Lubricantes</td>
+            <td>Egresos</td>
+          </tr>
+          <tr>
+            <td>61200001</td>
+            <td>Mantenimiento de Local</td>
+            <td>Egresos</td>
+          </tr>
+          <tr>
+            <td>61300001</td>
+            <td>Transporte</td>
+            <td>Egresos</td>
+          </tr>
+          <tr>
+            <td>61400001</td>
+            <td>Gastos de Envio</td>
+            <td>Egresos</td>
+          </tr>
+          <tr>
+            <td>61500001</td>
+            <td>Energia Electrica (40%)</td>
+            <td>Egresos</td>
+          </tr>
+          <tr>
+            <td>61600001</td>
+            <td>Suministro de Agua</td>
+            <td>Egresos</td>
+          </tr>
+          <tr>
+            <td>61700001</td>
+            <td>Alquiler de Local (40%)</td>
+            <td>Egresos</td>
+          </tr>
+          <tr>
+            <td>61800001</td>
+            <td>Mantenimiento de Vehiculos</td>
+            <td>Egresos</td>
+          </tr>
+          <tr>
+            <td>61900001</td>
+            <td>Donaciones</td>
+            <td>Egresos</td>
+          </tr>
+          <tr>
+            <td>62000001</td>
+            <td>Gastos de Botiquin</td>
+            <td>Egresos</td>
+          </tr>
+          <tr>
+            <td>62100001</td>
+            <td>Gastos de Averias</td>
+            <td>Egresos</td>
+          </tr>
+          <tr>
+            <td>62200001</td>
+            <td>SUELDOS Y SALARIOS</td>
+            <td>Egresos</td>
+          </tr>
+          <tr>
+            <td>62200002</td>
+            <td>Treceavo Mes de Salario</td>
+            <td>Egresos</td>
+          </tr>
+          <tr>
+            <td>62200003</td>
+            <td>Catorceavo Mes de Salario</td>
+            <td>Egresos</td>
+          </tr>
+          <tr>
+            <td>62300001</td>
+            <td>Gastos Legales</td>
+            <td>Egresos</td>
+          </tr>
+          <tr>
+            <td>62400001</td>
+            <td>Papeleria y Utiles de Oficina</td>
+            <td>Egresos</td>
+          </tr>
+          <tr>
+            <td>62500001</td>
+            <td>Prestaciones Laborales</td>
+            <td>Egresos</td>
+          </tr>
+          <tr>
+            <td>62600001</td>
+            <td>Bonificaciones</td>
+            <td>Egresos</td>
+          </tr>
+          <tr>
+            <td>62700001</td>
+            <td>Impuestos Municipales</td>
+            <td>Egresos</td>
+          </tr>
+          <tr>
+            <td>62800001</td>
+            <td>Atenciones a EMPLEADOS</td>
+            <td>Egresos</td>
+          </tr>
+          <tr>
+            <td>62900001</td>
+            <td>Mantenimiento Mobiliario</td>
+            <td>Egresos</td>
+          </tr>
+          <tr>
+            <td>63000001</td>
+            <td>Gastos Financieros</td>
+            <td>Egresos</td>
+          </tr>
+          <tr>
+            <td>63100001</td>
+            <td>Internet y Cable (CABLE COLOR)</td>
+            <td>Egresos</td>
+          </tr>
+          <tr>
+            <td>63100002</td>
+            <td>Gastos Aduaneros</td>
+            <td>Egresos</td>
+          </tr>
+          <tr>
+            <td>63100003</td>
+            <td>Telefóno</td>
+            <td>Egresos</td>
+          </tr>
+          <tr>
+            <td>63100004</td>
+            <td>Seguros de Daños</td>
+            <td>Egresos</td>
+          </tr>
+          <tr>
+            <td>69900001</td>
+            <td>Gastos Varios</td>
+            <td>Egresos</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+
+    <!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
